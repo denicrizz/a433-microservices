@@ -5,8 +5,6 @@ services:
   item-db:
     image: mongo:3
     restart: always
-    ports:
-      - "27017:27017"  
     volumes:
       - "app-db:/data/db"  
 # mengatur service container item-app
